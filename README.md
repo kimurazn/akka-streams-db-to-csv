@@ -1,6 +1,7 @@
 # akka-streams-db-to-csv
 
-Akka Streamsを使用してRDBからデータを取得しCSVに書き出す処理のサンプルです。
+現行OPからデータを抽出しCSVに書き出す処理ライブラリ
+※Akka Streamsを使用してRDBからデータを取得
 
 ## 環境
 - Scala 2.12.1
@@ -10,11 +11,6 @@ Akka Streamsを使用してRDBからデータを取得しCSVに書き出す処�
 
 プロジェクトのルートで以下のコマンドを入力します。
 mysqlコマンドでパスワードを求められたら`password`と入力してください。
-
-```shell
-docker-compose up -d
-mysql -u root -p -h 127.0.0.1 test < migration.sql 
-```
 
 ## 実行
 ```shell
